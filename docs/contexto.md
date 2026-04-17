@@ -43,3 +43,27 @@ Pasos generales del algoritmo:
 3. Calcular el conteo de cada nucleótido.
 4. Calcular la longitud total.
 5. Imprimir los resultados con formato claro.
+
+
+## 🆕 Versión 1.2
+
+### Cambios principales
+- El script ahora lee la secuencia desde un archivo de texto especificado por línea de comandos usando `argparse`.
+- El código está organizado en funciones separadas para mayor legibilidad y mantenibilidad.
+- Se agregó validación para caracteres inválidos (solo se aceptan A, T, G, C, mayúsculas o minúsculas).
+- Se maneja errores como archivo no encontrado o archivo vacío.
+- La secuencia se limpia (espacios y conversión a mayúsculas) antes del procesamiento.
+
+### Requisitos funcionales actualizados
+- La secuencia se lee desde un archivo pasado como argumento.
+- Si hay caracteres inválidos, se informa al usuario y el programa termina sin procesar.
+- Solo se procesa si la secuencia es válida.
+
+### Diseño actualizado
+1. Configurar argparse para recibir el archivo de entrada.
+2. Leer el contenido del archivo.
+3. Verificar si el archivo existe y no está vacío.
+4. Limpiar la secuencia.
+5. Validar caracteres.
+6. Si válida, contar nucleótidos y calcular longitud.
+7. Imprimir resultados.
